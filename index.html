@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css"> 
+        <title>Splitter | Tip calculator app</title>
+    </head>
+
+    <body>
+        <div class="imagem">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+
+        <section class="secao">
+            <div class="first">
+
+                <div class="first__div--1">
+                    <label>Bill</label> 
+                    <input type="number" class="input bill__input" id="bill__input" placeholder="0.00" min="0">
+                </div>
+                
+
+                <div class="first__div--2">
+                    <label>Select Tip %</label>
+                    <div class="tip">
+                        <div class="tips ">5%</div>
+                        <div class="tips ">10%</div>
+                        <div class="tips active__tip">15%</div>
+                        <div class="tips ">25%</div>
+                        <div class="tips ">50%</div>
+                        <div id="tip__custom"><input type="number" class="tip__custom" placeholder="Custom" min="0"></div> 
+                    </div>
+                </div>
+                
+
+                <div class="first__div--3">
+                    <label>Number of People</label> 
+                    <input type="number" class="input people__input" id="people__input" placeholder="0" min="0">
+                </div>
+                
+                
+            </div>
+
+            <div class="second">
+                <div class="tip__amount">
+                    <div class="text">
+                        <h3>Tip Amount</h3> 
+                        <p class="person">/ person</p> 
+                    </div>
+                    <div class="amount" id="tip__amount--person">$0.00</div>
+                 
+                </div>
+
+                <div class="total">
+                    <div class="text">
+                        <h3>Total</h3>
+                        <p class="person">/ person</p>
+                        
+                    </div>
+                    <div class="amount" id="total__amount">$0.00</div>
+                </div>
+              
+                <div class="reset">RESET</div>
+                                
+            </div>
+        </section>
+            
+        <script src="script.js"></script>
+    </body>
+</html>

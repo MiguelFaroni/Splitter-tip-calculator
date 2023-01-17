@@ -1,0 +1,214 @@
+*{
+    --Strong_cyan : hsl(172, 67%, 45%);
+    --Strong_cyan--opc : hsla(172, 67%, 45%, 0.42);
+    --Very_dark-cyan:hsl(183, 100%, 15%);
+    --Dark_grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish_cyan: hsl(184, 14%, 56%);
+    --Light_grayish-cyan: #c5e4e7;
+    --Very_light-grayish--cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    
+
+}
+
+body{
+    background-color: var(--Light_grayish-cyan);
+    font-family: "Space Mono",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.imagem{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.secao{
+    background-color: var(--White);
+    padding: 2em;
+    border-radius: 1.4em 1.4em 0 0;
+}
+
+/* Primeira Parte*/
+
+label{
+    color: var(--Dark_grayish-cyan);
+    display: block;
+}
+
+.first__div--1,.first__div--2,.first__div--3{
+    margin-bottom: 2rem;
+    line-height: 2.5;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 18px;
+    outline-color: var(--Strong_cyan);
+    background-color: var(--Very_light-grayish--cyan);
+    text-align: right;
+    font-size: 24px;
+    color: var(--Very_dark-cyan);
+    font-weight: 700;
+    font-family: "Space Mono";
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Input icons*/
+
+.bill__input{
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+
+.people__input{
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+
+/*Tips buttons*/
+
+.tip{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 1em;
+    column-gap: 18px;
+       
+}
+
+.tips{
+    background-color: var(--Very_dark-cyan);
+    color: var(--White);
+    font-size: 24px;
+    border-radius: 5px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.active__tip{
+    background-color: var(--Strong_cyan);
+    color:var(--Very_dark-cyan)
+}
+
+.tips:hover{
+    background-color: var(--Strong_cyan--opc);
+    color: var(--Very_dark-cyan);
+    
+}
+
+#tip__custom input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*Segunda Parte*/
+
+.second{
+    background-color: var(--Very_dark-cyan);
+    padding: 2em 1em;
+    border-radius: 15px;
+    
+}
+
+
+.tip__amount,.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+h3{
+    color: var(--White);
+    font-size: 16px;
+}
+
+.person {
+    font-size: 14px;
+    color: var(--Grayish_cyan);
+    line-height: 2.5;
+      
+}
+
+.amount{
+    font-size: 30px;
+    color: var(--Strong_cyan);
+}
+
+.reset{
+    text-align: center;
+    background-color: var(--Strong_cyan);
+    padding: .8em 0;
+    border-radius: 5px;
+    color: var(--Very_dark-cyan);
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color: hsl(172, 83%, 73%);
+}
+
+
+/*Media queries*/
+
+@media screen and (min-width : 1000px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao{
+        display: flex;
+        border-radius: 1.4em 1.4em 1.4em 1.4em;
+        width: 990px;
+    }
+
+    .second{
+        padding: 2em ;
+        margin-left: 5em;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        
+    }
+
+    .amount {
+        
+        font-size: 40px;
+    }
+
+    .tip__amount{
+        margin-top: 2em;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .reset{
+        margin-top: 8em;
+    }
+
+    .imagem{
+        margin: 5em 0;
+    }
+}
+
